@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Shizuru&display=swap');
+
+#titolo {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Shizuru', cursive;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content:space-around;
+   
+  
+
+}
+
+.flex-item  {
+    width: 20%;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    
+    }
+
+    .git-comando {
+       font-weight: bold;
+       text-align: center;
+       padding: 8px;
+       
+    }
+
+    .git-descr{
+        color:white;
+        font-style: italic;
+        padding: 8px;
+        text-align:center;
+    }
+    .flex-item:nth-child(even) .git-descr {
+        background-color:red;
+       
+      }
+
+      .flex-item:nth-child(odd) .git-descr {
+        background-color:black;
+      }
+
+
+/* RESPONSIVE MEDIA QUERY */
+      @media only screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        
+        }
+
+          .flex-item  {
+            width: 60%;
+            margin: auto;
+            }
+      }
